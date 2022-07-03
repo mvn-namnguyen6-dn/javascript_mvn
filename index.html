@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+    <title>javascript</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1> khác biệt giữ null và undefined</h1>
+    <h2>Null:</h2>
+    <p>Null có nghĩa là giá trị rỗng hoặc giá trị không tồn tại, nó có thể được sử dụng để gán cho một biến như là một
+        đại diện không có giá trị.</p>
+    <h2>Undefined:</h2>
+    <p>Undefined có nghĩa là không xác định. Trong javascript, khi bạn khai báo một biến nhưng chưa gán giá trị cho nó,
+        giá trị của biến đó sẽ là undefined.</p>
+    <h2>**khác nhau</h2>
+    <p>Có thể thấy undefind có kiểu giá trị là undefined nhưng null lại là 1 object (bạn có thể coi đó là một lỗi nhỏ
+        trong JavaScript khi để kiểu của null là đối tượng, đáng ra kiểu của nó nên là null).</p>
+    <h1>use strict:</h1>
+    <p>Use strict dịch sang tiếng việt thì có nghĩa là sử dụng sự nghiêm ngặt. Khi một đoạn lệnh được khai báo use
+        strict thì tất cả các dòng code ở phía dưới dòng khai báo use strict sẽ được quản lý một cách nghiêm ngặt hơn về
+        cú pháp</p>
+    <h2>advantage</h2>
+    <p>
+        1. Loại bỏ một số khía cạnh không hợp lý và không chính xác của cú pháp Javascript và giảm một số hành vi kỳ
+        lạ;<br>
+
+        2. Loại bỏ một số khía cạnh không an toàn của hoạt động mã và đảm bảo an toàn của hoạt động mã;<br>
+
+        3. Cải thiện hiệu quả của trình biên dịch và tăng tốc độ chạy;<br>
+
+        4. Mở đường cho phiên bản Javascript mới trong tương lai.<br>
+    </p>
+    <h2>disadvantage</h2>
+    <p>Bây giờ trang web JS sẽ được nén, một số tệp sử dụng chế độ nghiêm ngặt, trong khi những tệp khác thì không. Lúc
+        này, những tập tin này ban đầu ở chế độ nghiêm ngặt, sau khi được hợp nhất, chuỗi đến giữa tập tin, không những
+        không biểu thị chế độ nghiêm ngặt mà còn lãng phí số byte sau khi nén.</p>
+    <h1>Khác nhau giữ "==" và "==="
+    </h1>
+    <h2>==</h2>
+    <p> JavaScript không quan tâm đến kiểu dữ liệu (chuỗi hoặc số nguyên) bạn chuyển cho nó, miễn là nội dung bạn cung
+        cấp phù hợp với nó.</p>
+    <h2>===</h2>
+    <p>So sánh cả giá trị và kiểu dữ liệu</p>
+
+    <h2>example:</h2>
+    <p>
+        so sánh == và === giữ số 9 và chuỗi 9:<br>
+        document.write(9 == "9");<br>
+        trả về true <br>
+        document.write(9 === "9");<br>
+        trả về false <br> </p>
+    <script>
+        document.write(9 == "9");
+        document.write('<br>')
+        document.write(9 === "9");  
+    </script>
+
+    <h1>List Falsy: </h1>
+    <p>Danh sách các giá trị falsy: undefined, null, false, 0, -0, 0n, NaN</p>
+
+
+</body>
+
+</html>
